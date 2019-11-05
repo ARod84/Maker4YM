@@ -1,0 +1,5 @@
+>-------->arreglar estructura plugin
+>-------->revisar story url quick edit
+>-------->agregar imagen a quick edit
+>-------->agregar un botón para todos bulk edit publish
+>-------->arreglar condicionales perfil, my tuts

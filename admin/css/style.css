@@ -1,0 +1,30 @@
+
+@screen and (max-width: 782px) {
+
+	.wp-list-table th.column-primary ~ th,
+	.wp-list-table tr:not(.inline-edit-row):not(.no-items) td.column-primary ~ td:not(.check-column) {
+
+	    display: block !important;
+
+	}
+}
+
+#adminmenu, 
+#adminmenu .wp-submenu, 
+#adminmenuback,
+#adminmenuwrap {
+  background-color: #3c3950 !important;
+  color: #fff;
+}
+
+.edit-php .fixed .column-author, .edit-php .fixed .column-categories {
+            width: 10%;
+        }
+
+/*
+ * Primera función del plugin chequear si upvote plugin está activo 
+ * chequear si el usuario está logueado
+ * Chequear si el usuario es admin
+ * chequear si las funciones existen
+ * activation and deactivation hook
+*/

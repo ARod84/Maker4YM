@@ -1,0 +1,181 @@
+
+/*@screen and (max-width: 782px) {
+
+	.wp-list-table th.column-primary ~ th,
+	.wp-list-table tr:not(.inline-edit-row):not(.no-items) td.column-primary ~ td:not(.check-column) {
+
+	    display: block !important;
+
+	}
+}*/
+
+/*.edit-php .fixed .column-author, .edit-php .fixed .column-categories {
+            width: 10%;
+       }*/
+
+/*
+ * Primera función del plugin chequear si upvote plugin está activo 
+ * chequear si el usuario está logueado
+ * Chequear si el usuario es admin
+ * chequear si las funciones existen
+ * activation and deactivation hook
+*/
+
+/*---ADMIN STYLES---*/
+
+/*  global styles */
+a,
+a:link {
+  color: #68609C;
+}
+
+a:hover {
+  color: #666EE8;
+}
+
+/*  styling for admin menu   */
+#adminmenu,
+#adminmenuback,
+#adminmenuwrap {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  background-color: #3c3950;
+  border-color: #fff;
+}
+
+#adminmenu .wp-has-current-submenu .wp-submenu,
+#adminmenu .wp-has-current-submenu .wp-submenu {
+  background-color: #4d4a61;
+}
+
+#wpfooter #footer-left img {
+  height:1.2rem;
+  width:auto;
+  margin-right: 0.5em;
+}
+
+/*  background and text color  */
+#adminmenu li.menu-top:hover, 
+#adminmenu li.opensub > a.menu-top, 
+#adminmenu li > a.menu-top:focus {
+  background-color:  #4d4a61;
+  color: #fff;
+}
+
+#adminmenu li.wp-menu-separator {
+  background-color: #3c3950;
+  border-color: #fff;
+}
+
+/*  links in admin menu  */
+#adminmenu a
+#adminmenu li.menu-top:hover, 
+#adminmenu li.opensub > a.menu-top,
+#adminmenu li > a.menu-top:focus {
+  color: #fff;
+}
+#adminmenu a:hover,
+#adminmenu a:active {
+  color: #fff;
+  text-decoration: underline;
+}
+#adminmenu .wp-submenu a {
+  color: #fff;
+}
+
+/* submenu on hover  */
+#adminmenu .wp-submenu, 
+.folded #adminmenu .wp-has-current-submenu .wp-submenu, 
+.folded #adminmenu a.wp-has-current-submenu:focus + .wp-submenu {
+  background-color: #3c3950;
+}
+
+/*  change color of arrow to submenu  */
+#adminmenu li.wp-not-current-submenu .wp-menu-arrow,
+#adminmenu li.wp-not-current-submenu .wp-menu-arrow div {
+  background: #3c3950;
+}
+
+/*  active screen as seen in menu - change the background and arrow color  */
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu,
+#adminmenu li.current a.menu-top,
+.folded #adminmenu li.wp-has-current-submenu,
+.folded #adminmenu li.current.menu-top,
+#adminmenu .wp-menu-arrow,
+#adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head {
+  background: #68609C;
+}
+#adminmenu li.wp-has-current-submenu .wp-menu-arrow,
+#adminmenu li.wp-has-current-submenu .wp-menu-arrow div {
+  background: #68609C;
+}
+
+/*  buttons  */
+.wp-core-ui .button-primary {
+  background: #68609C;
+  background-image: -webkit-gradient(linear, left top, left bottom,from(#68609C),to(#3c3950));
+  background-image: -webkit-linear-gradient( top, #68609C, #3c3950);
+  background-image: -moz-linear-gradient( top, #68609C, #3c3950);
+  background-image: -ms-linear-gradient( top, #68609C, #3c3950);
+  background-image: -o-linear-gradient( top, #68609C, #3c3950);
+  background-image: linear-gradient( to bottom, #68609C, #3c3950);
+  border-color: #666EE8;
+  color: rgba(255,255,255,0.95);
+  -webkit-box-shadow: inset 0 1px 0 rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 0 rgba(0,0,0,0.1);
+  text-shadow: none;
+}
+
+.wp-core-ui .button-primary.active,
+.wp-core-ui .button-primary:hover,
+.wp-core-ui .button-primary:active {
+  background: #68609C;
+  background-color: #68609C;
+  border-color: #666EE8;
+  color: rgba(255,255,255,0.95);
+  -webkit-box-shadow: inset 0 1px 0 rgba(0,0,0,0.1);  
+  box-shadow: inset 0 1px 0 rgba(0,0,0,0.1);
+}
+
+wp-core-ui .button-primary.focus, .wp-core-ui .button-primary:focus {
+
+    box-shadow: none;
+
+}
+
+.wp-core-ui .button-primary.focus, .wp-core-ui .button-primary.hover, .wp-core-ui .button-primary:focus, .wp-core-ui .button-primary:hover {
+
+    background: #68609C;
+    border-color: none;
+    color: #fff;
+
+}
+
+/*  badges */
+#adminmenu .awaiting-mod, #adminmenu .update-plugins {
+  background-color: #FF4961;
+}
+
+/*  toggle arrow  */
+.wp-list-table .toggle-row::before,
+.bulk-action-notice .toggle-indicator::before, 
+.js .meta-box-sortables .postbox .toggle-indicator::before, 
+.privacy-text-box .toggle-indicator::before, .sidebar-name .toggle-indicator::before {
+  background-color: #68609C;
+  border: 1px solid #666EE8;
+  color: #fff;
+}
+
+
+/*  dashboard help  */
+.nav-example img {
+  width: 100%;
+  height: auto;
+}
+
+.row-images {
+  display: flex;
+}
+
+/* columns  */
+
+
